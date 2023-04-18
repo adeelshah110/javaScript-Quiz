@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --primary: #8f00ff;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+.background {
+  background-image: url(background.png);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*HOw to make center the box*/
+  display: grid;
+  place-items: center;
+}
+
+/*HOW TO MAKE A BOX INSIDE THE BACKGROUND*/
+.box {
+  height: 320px;
+  width: 600px;
+  background: rgba(240, 240, 240, 0.68);
+  border-style: solid;
+  border-width: 0px 2px 1px 0px;
+  border-radius: 20px;
+  border: #fcddec;
+  /*box-show 0px is x-axis 19px is y-xis and 41 is how much*/
+
+  box-shadow: 0px 19px 41px rgba(0, 0, 0, 0.36);
+  /*Now for display items in middle of the form*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+}
+.box h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  color: var(--primary);
+}
+#score {
+  margin-left: 20px;
+}
+
+.box h3 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 54px;
+}
+/*Question form to make the input up and submit btn down*/
+#questionForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /*covers the whole */
+  width: 100%;
+}
+#answerInput {
+  background: transparent;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  height: 40px;
+  padding: 20px;
+  font-size: 20px;
+}
+#answerInput:focus-visible {
+  outline: 1px solid var(--primary);
+  border: 1px solid var(--primary);
+}
+.primary-btn {
+  font-size: 32px;
+  height: 46px;
+  background: var(--primary);
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
